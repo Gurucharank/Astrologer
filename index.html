@@ -16,24 +16,115 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
         <div class="container">
-            <a class="navbar-brand text-white fs-1" href="#">Astrologer</a>
+            <a class="navbar-brand text-white fs-1" href="index.html">Astrologer</a>
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
                 <span><img src="./list.svg" alt="sdfsd"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fs-5 gap-4">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Specialities</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Consultant</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Product</a></li>
-                    <li class="nav-item"><button type="button" class="btn btn-light mt-1 fs-5">login</button>
+                    <li class="nav-item"><button type="button" class="btn btn-light mt-1 fs-5"
+                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal">login</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--login page-->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="d-flex justify-content-between p-3">
+                    <p> </p>
+                    <h1 class=" fs-5 text-center" id="exampleModalToggleLabel">Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="name@company.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control border border-end-0"
+                                    id="exampleInputPassword1" placeholder="*********">
+                                <button class="forgotbtn btn border border-start-0 " type="button"
+                                    id="button-addon2">Forgot?</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Save Id password</label>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="input-group d-flex justify-content-center">
+                    <p>Don't have an account?
+                        <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Sign
+                            up</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="d-flex justify-content-between p-3">
+                    <p> </p>
+                    <h1 class=" fs-5 text-center" id="exampleModalToggleLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">What’s your email address?</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="name@company.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Enter a password</label>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control border " id="exampleInputPassword1"
+                                    placeholder="*********">
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Sign Up for
+                                Free</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="input-group d-flex justify-content-center">
+                    <p>Already have an account?
+                        <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">Sign
+                            in</button>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
 
 
     <!-- Hero Section -->
@@ -46,6 +137,8 @@
             <button class="btn btn-outline-light">Chat Now</button>
         </div>
     </section>
+
+
 
 
 
