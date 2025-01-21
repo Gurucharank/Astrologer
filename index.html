@@ -129,15 +129,29 @@
 
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-center justify-content-center text-center position-relative">
-        <div class="overlay"></div> <!-- Dark overlay div -->
+        <div class="overlay"></div>
         <div class="container position-relative">
             <h1 class="display-3 text-white">Discover Your Future</h1>
             <p class="lead text-white">Get personalized astrology insights from a trusted astrologer.</p>
-            <button class="btn btn-light me-2">Talk Now</button>
-            <button class="btn btn-outline-light">Chat Now</button>
+            <button class="btn btn-light me-2 chatbot-toggle-btn">Talk Now</button>
+            <button class="btn btn-outline-light chatbot-toggle-btn">Chat Now</button>
         </div>
     </section>
 
+    <!-- Chatbot Modal -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <span>Astro Help</span>
+            <button class="btn-close btn-sm" id="closeChatbot"></button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-message">Hello, how can I help you?</div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" placeholder="Type your message here..." id="chatInput">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
 
 
 
@@ -197,6 +211,39 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Chatbot functionality
+        const chatbotContainer = document.getElementById('chatbot');
+        const chatbotToggleBtns = document.querySelectorAll('.chatbot-toggle-btn');
+        const closeChatbotBtn = document.getElementById('closeChatbot');
+        const chatInput = document.getElementById('chatInput');
+        const chatbotBody = chatbotContainer.querySelector('.chatbot-body');
+        const sendMessageBtn = document.getElementById('sendMessage');
+
+        // Show/hide chatbot
+        chatbotToggleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                chatbotContainer.style.display = 'flex';
+            });
+        });
+
+        closeChatbotBtn.addEventListener('click', () => {
+            chatbotContainer.style.display = 'none';
+        });
+
+        // Send message
+        sendMessageBtn.addEventListener('click', () => {
+            const userMessage = chatInput.value.trim();
+            if (userMessage) {
+                const userMessageElement = document.createElement('div');
+                userMessageElement.classList.add('chatbot-message');
+                userMessageElement.textContent = userMessage;
+                chatbotBody.appendChild(userMessageElement);
+                chatInput.value = '';
+                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            }
+        });
+    </script>
 </body>
 
 </html>
