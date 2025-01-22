@@ -68,6 +68,28 @@ body {
     cursor: pointer;
 }
 
+.chatbot-message {
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 16px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Chatbot messages on the left */
+.chatbot-message.bot {
+    background: #f0f0f0;
+    text-align: left;
+    align-self: flex-start;
+}
+
+/* User messages on the right */
+.chatbot-message.user {
+    background: #e8e8e8;
+
+    text-align: right;
+    align-self: flex-end;
+}
 
 .navbar {
     position: fixed;
