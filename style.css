@@ -85,7 +85,11 @@ body {
 
 /* User messages on the right */
 .chatbot-message.user {
+<<<<<<< HEAD
     background: #d0d0d0;
+=======
+    background: #e8e8e8;
+>>>>>>> 693dcee6c0217c4a207713fcaaf1e66cfe33141b
 
     text-align: right;
     align-self: flex-end;
