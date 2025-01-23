@@ -7,7 +7,7 @@
     z-index: 999;
     /* Ensure navbar is always above the video */
     transition: background 0.3s ease;
-    /* Smooth transition for background */
+
 }
 
 /* When scrolling, add a background to the navbar */
