@@ -1,4 +1,5 @@
 /* Navbar styles */
+
 .navbar {
     position: absolute;
     width: 100%;
@@ -7,16 +8,19 @@
     z-index: 999;
     /* Ensure navbar is always above the video */
     transition: background 0.3s ease;
-
 }
 
+
 /* When scrolling, add a background to the navbar */
+
 .navbar-scrolled {
     background: rgba(0, 0, 0, 0.5);
     /* Semi-transparent black when scrolled */
 }
 
+
 /* Text color in navbar */
+
 .navbar .navbar-brand,
 .navbar .nav-link {
     color: white;
@@ -24,7 +28,9 @@
     /* Optional: adds text shadow for better readability */
 }
 
+
 /* Hero Section Styles */
+
 .hero-section {
     position: relative;
     height: 100vh;
@@ -32,7 +38,9 @@
     overflow: hidden;
 }
 
+
 /* Video Background */
+
 #video-background {
     position: absolute;
     top: 0;
@@ -44,7 +52,9 @@
     /* Place the video behind other content */
 }
 
+
 /* Overlay for video (Optional, to add a dimming effect) */
+
 .overlay {
     position: absolute;
     top: 0;
@@ -57,7 +67,9 @@
     /* Place overlay above video, but below text */
 }
 
+
 /* Text styling inside the hero section */
+
 .hero-section .container {
     z-index: 2;
     /* Ensure text is above video */
@@ -73,7 +85,9 @@
     font-size: 1.5rem;
 }
 
+
 /* Navbar transition */
+
 .navbar.navbar-transparent {
     background: transparent;
 }
@@ -88,14 +102,15 @@
     overflow: visible;
 }
 
+
 /* Mobile view */
+
 @media (max-width: 768px) {
     .carousel-item p {
         display: block;
         /* Ensure paragraphs are shown on mobile */
     }
 }
-
 
 .footer {
     background-color: #000000;
@@ -112,7 +127,9 @@
     margin-bottom: 15px;
 }
 
+
 /* Chatbot Styles */
+
 .chatbot-container {
     position: fixed;
     bottom: 20px;
@@ -128,7 +145,6 @@
     z-index: 1000;
     /* Higher than .overlay */
 }
-
 
 .chatbot-header {
     background: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
@@ -186,17 +202,20 @@
     word-wrap: break-word;
 }
 
+
 /* Chatbot messages on the left */
+
 .chatbot-message.bot {
     background: #f0f0f0;
     text-align: left;
     align-self: flex-start;
 }
 
+
 /* User messages on the right */
+
 .chatbot-message.user {
     background: #d0d0d0;
-
     text-align: right;
     align-self: flex-end;
 }
