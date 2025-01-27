@@ -2,285 +2,308 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrologer Portfolio</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrologer Portfolio</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
-        <div class="container">
-            <a class="navbar-brand text-white fs-1" href="index.html">Astrologer</a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span><img src="./list.svg" alt="sdfsd"></span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white fs-1" href="index.html">Astrologer</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span><img src="./list.svg" alt="sdfsd" /></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-5 gap-4">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="specialities.html">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Consultant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-light mt-1 fs-5" data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal">
+              login
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5 gap-4">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Specialities</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Consultant</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Product</a></li>
-                    <li class="nav-item"><button type="button" class="btn btn-light mt-1 fs-5"
-                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal">login</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--login page-->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content ">
-                <div class="d-flex justify-content-between p-3">
-                    <p> </p>
-                    <h1 class=" fs-5 text-center" id="exampleModalToggleLabel">Log in</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="name@company.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <div class="input-group mb-3">
-                                <input type="password" class="form-control border border-end-0"
-                                    id="exampleInputPassword1" placeholder="*********">
-                                <button class="forgotbtn btn border border-start-0 " type="button"
-                                    id="button-addon2">Forgot?</button>
-                            </div>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Save Id password</label>
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Sign in</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="input-group d-flex justify-content-center">
-                    <p>Don't have an account?
-                        <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle2"
-                            data-bs-toggle="modal">Sign
-                            up</button>
-                    </p>
-                </div>
-            </div>
-        </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content ">
-                <div class="d-flex justify-content-between p-3">
-                    <p> </p>
-                    <h1 class=" fs-5 text-center" id="exampleModalToggleLabel">Sign Up</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">What’s your email address?</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="name@company.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Enter a password</label>
-                            <div class="input-group mb-3">
-                                <input type="password" class="form-control border " id="exampleInputPassword1"
-                                    placeholder="*********">
-                            </div>
-                        </div>
+  </nav>
 
-                        <div class="">
-                            <button type="submit" class="btn btn-secondary" style="width: 100%;">Sign Up for
-                                Free</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="input-group d-flex justify-content-center">
-                    <p>Already have an account?
-                        <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle"
-                            data-bs-toggle="modal">Sign
-                            in</button>
-                    </p>
-                </div>
-            </div>
-
+  <!--login page-->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex justify-content-between p-3">
+          <p></p>
+          <h1 class="fs-5 text-center" id="exampleModalToggleLabel">
+            Log in
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="name@company.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control border border-end-0" id="exampleInputPassword1"
+                  placeholder="*********" />
+                <button class="forgotbtn btn border border-start-0" type="button" id="button-addon2">
+                  Forgot?
+                </button>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Save Id password</label>
+            </div>
+            <div class="">
+              <button type="submit" class="btn btn-secondary" style="width: 100%">
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="input-group d-flex justify-content-center">
+          <p>
+            Don't have an account?
+            <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+              Sign up
+            </button>
+          </p>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-    <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center justify-content-center text-center position-relative">
-        <div class="overlay"></div>
-        <div class="container position-relative">
-            <h1 class="display-3 text-white">Discover Your Future</h1>
-            <p class="lead text-white">Get personalized astrology insights from a trusted astrologer.</p>
-            <button class="btn btn-light me-2 chatbot-toggle-btn">Talk Now</button>
-            <button class="btn btn-outline-light chatbot-toggle-btn">Chat Now</button>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex justify-content-between p-3">
+          <p></p>
+          <h1 class="fs-5 text-center" id="exampleModalToggleLabel">
+            Sign Up
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </section>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">What’s your email address?</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="name@company.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Enter a password</label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control border" id="exampleInputPassword1" placeholder="*********" />
+              </div>
+            </div>
 
-    <!-- Chatbot Modal -->
-    <div class="chatbot-container" id="chatbot">
-        <div class="chatbot-header">
-            <span>Astro Help</span>
-            <button class="btn-close btn-sm" id="closeChatbot"></button>
+            <div class="">
+              <button type="submit" class="btn btn-secondary" style="width: 100%">
+                Sign Up for Free
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="chatbot-body">
-            <div class="chatbot-message">Hello, how can I help you?</div>
+        <div class="input-group d-flex justify-content-center">
+          <p>
+            Already have an account?
+            <button class="forgotbtn btn m-0 pt-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+              Sign in
+            </button>
+          </p>
         </div>
-        <div class="chatbot-footer">
-            <input type="text" placeholder="Type your message here..." id="chatInput">
-            <button id="sendMessage">Send</button>
-        </div>
+      </div>
     </div>
+  </div>
 
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center position-relative">
+    <div class="overlay"></div>
+    <div class="container position-relative">
+      <h1 class="display-3 text-white">Discover Your Future</h1>
+      <p class="lead text-white">
+        Get personalized astrology insights from a trusted astrologer.
+      </p>
+      <button class="btn btn-light me-2 chatbot-toggle-btn">Talk Now</button>
+      <button class="btn btn-outline-light chatbot-toggle-btn">
+        Chat Now
+      </button>
+    </div>
+  </section>
 
+  <!-- Chatbot Modal -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+      <span>Astro Help</span>
+      <button class="btn-close btn-sm" id="closeChatbot"></button>
+    </div>
+    <div class="chatbot-body">
+      <div class="chatbot-message">Hello, how can I help you?</div>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" placeholder="Type your message here..." id="chatInput" />
+      <button id="sendMessage">Send</button>
+    </div>
+  </div>
 
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container d-flex flex-column justify-content-center align-items-center ">
-            <h2>About the Astrologer</h2>
-            <div class="card mb-3 mt-4" style="max-width: 1080px;">
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <img src="myastro.jpg" class="img-fluid rounded-start" alt="astrologer image">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body">
-                            <h5 class="card-title">Astro Guruji</h5>
-                            <p class="card-text">An astrologer is a practitioner of astrology, the ancient art and
-                                science of interpreting celestial movements and their influence on human life and
-                                events. Using tools like horoscopes, natal charts, and planetary alignments, astrologers
-                                provide insights into personality traits, life paths, and potential challenges or
-                                opportunities.
-
-                                Astrologers often specialize in various branches of astrology, such as natal (birth)
-                                astrology, predictive astrology, relationship compatibility, or vocational guidance.
-                                They combine their knowledge of the zodiac signs, planets, houses, and aspects to
-                                deliver personalized readings that help individuals understand themselves better and
-                                make informed decisions.</p>
-                        </div>
-                    </div>
-                </div>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h2>About the Astrologer</h2>
+      <div class="card mb-3 mt-4" style="max-width: 1080px">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="myastro.jpg" class="img-fluid rounded-start" alt="astrologer image" />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Astro Guruji</h5>
+              <p class="card-text">
+                An astrologer is a practitioner of astrology, the ancient art
+                and science of interpreting celestial movements and their
+                influence on human life and events. Using tools like
+                horoscopes, natal charts, and planetary alignments,
+                astrologers provide insights into personality traits, life
+                paths, and potential challenges or opportunities. Astrologers
+                often specialize in various branches of astrology, such as
+                natal (birth) astrology, predictive astrology, relationship
+                compatibility, or vocational guidance. They combine their
+                knowledge of the zodiac signs, planets, houses, and aspects to
+                deliver personalized readings that help individuals understand
+                themselves better and make informed decisions.
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4 grid-item">
-                    <h5>Contact</h5>
-                    <p>Email: guruji@astrologer.com</p>
-                    <p>Phone: +91 1234567890</p>
-                </div>
-                <div class="col-md-4 grid-item">
-                    <h5>Agreements</h5>
-                    <p><a href="privacy.html">Privacy Policy</a></p>
-                    <p><a href="terms.html">Terms of Service</a></p>
-                </div>
-                <div class="col-md-4 grid-item">
-                    <h5>Follow Us</h5>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <i class="bi bi-facebook pe-2" style="font-size: 2rem;"></i> </a>
-                    <a href="https://www.Instagram.com" target="_blank"> <i class="fab fa-instagram"
-                            style="font-size: 2rem;"></i> </a>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 grid-item">
+          <h5>Contact</h5>
+          <p>Email: guruji@astrologer.com</p>
+          <p>Phone: +91 1234567890</p>
         </div>
-    </footer>
+        <div class="col-md-4 grid-item">
+          <h5>Agreements</h5>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+          <p><a href="#">Terms of Service</a></p>
+        </div>
+        <div class="col-md-4 grid-item">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="bi bi-facebook pe-2" style="font-size: 2rem;"></i> </a>
+          <a href="https://www.Instagram.com" target="_blank"> <i class="fab fa-instagram" style="font-size: 2rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Chatbot functionality
-        const chatbotContainer = document.getElementById('chatbot');
-        const chatbotToggleBtns = document.querySelectorAll('.chatbot-toggle-btn');
-        const closeChatbotBtn = document.getElementById('closeChatbot');
-        const chatInput = document.getElementById('chatInput');
-        const chatbotBody = chatbotContainer.querySelector('.chatbot-body');
-        const sendMessageBtn = document.getElementById('sendMessage');
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Chatbot functionality
+    const chatbotContainer = document.getElementById("chatbot");
+    const chatbotToggleBtns = document.querySelectorAll(
+      ".chatbot-toggle-btn"
+    );
+    const closeChatbotBtn = document.getElementById("closeChatbot");
+    const chatInput = document.getElementById("chatInput");
+    const chatbotBody = chatbotContainer.querySelector(".chatbot-body");
+    const sendMessageBtn = document.getElementById("sendMessage");
 
-        // Show/hide chatbot
-        chatbotToggleBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                chatbotContainer.style.display = 'flex';
-            });
-        });
+    // Show/hide chatbot
+    chatbotToggleBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        chatbotContainer.style.display = "flex";
+      });
+    });
 
-        closeChatbotBtn.addEventListener('click', () => {
-            chatbotContainer.style.display = 'none';
-        });
+    closeChatbotBtn.addEventListener("click", () => {
+      chatbotContainer.style.display = "none";
+    });
 
-        // Function to send message
-        function sendMessage() {
-            const userMessage = chatInput.value.trim();
-            if (userMessage) {
-                // User message
-                const userMessageElement = document.createElement('div');
-                userMessageElement.classList.add('chatbot-message', 'user');
-                userMessageElement.textContent = userMessage;
-                chatbotBody.appendChild(userMessageElement);
-                chatInput.value = '';
-                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+    // Function to send message
+    function sendMessage() {
+      const userMessage = chatInput.value.trim();
+      if (userMessage) {
+        // User message
+        const userMessageElement = document.createElement("div");
+        userMessageElement.classList.add("chatbot-message", "user");
+        userMessageElement.textContent = userMessage;
+        chatbotBody.appendChild(userMessageElement);
+        chatInput.value = "";
+        chatbotBody.scrollTop = chatbotBody.scrollHeight;
 
-                // Display chatbot response after a short delay
-                setTimeout(() => {
-                    const botMessageElement = document.createElement('div');
-                    botMessageElement.classList.add('chatbot-message', 'bot');
-                    botMessageElement.textContent = "Thank you for being part of astrologer.";
-                    chatbotBody.appendChild(botMessageElement);
-                    chatbotBody.scrollTop = chatbotBody.scrollHeight;
-                }, 5000); // 5 seconds delay
-            }
-        }
+        // Display chatbot response after a short delay
+        setTimeout(() => {
+          const botMessageElement = document.createElement('div');
+          botMessageElement.classList.add('chatbot-message', 'bot');
+          botMessageElement.textContent = "Thank you for being part of astrologer.";
+          chatbotBody.appendChild(botMessageElement);
+          chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        }, 10000); // 10 seconds delay
+      }
+    }
 
-        // Send message on button click
-        sendMessageBtn.addEventListener('click', sendMessage);
+    // Send message on button click
+    sendMessageBtn.addEventListener("click", sendMessage);
 
-        // Send message on pressing Enter key
-        chatInput.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter') {
-                event.preventDefault(); // Prevent default form submission
-                sendMessage();
-            }
-        });
+    // Send message on pressing Enter key
+    chatInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default form submission
+        sendMessage();
+      }
+    });
 
-        // Hide chatbot when clicking outside
-        document.addEventListener('click', (event) => {
-            const isClickInside = chatbotContainer.contains(event.target) ||
-                Array.from(chatbotToggleBtns).some(btn => btn.contains(event.target));
-            if (!isClickInside) {
-                chatbotContainer.style.display = 'none';
-            }
-        });
-    </script>
+    // Hide chatbot when clicking outside
+    document.addEventListener("click", (event) => {
+      const isClickInside =
+        chatbotContainer.contains(event.target) ||
+        Array.from(chatbotToggleBtns).some((btn) =>
+          btn.contains(event.target)
+        );
+      if (!isClickInside) {
+        chatbotContainer.style.display = "none";
+      }
+    });
+  </script>
 </body>
 
 </html>
