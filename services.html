@@ -421,6 +421,17 @@
           chatInput.value = "";
           chatbotBody.scrollTop = chatbotBody.scrollHeight;
 
+<<<<<<< HEAD
+                // Display chatbot response after a short delay
+                setTimeout(() => {
+                    const botMessageElement = document.createElement('div');
+                    botMessageElement.classList.add('chatbot-message', 'bot');
+                    botMessageElement.textContent = "Thank you for being part of astrologer.";
+                    chatbotBody.appendChild(botMessageElement);
+                    chatbotBody.scrollTop = chatbotBody.scrollHeight;
+                }, 5000); // 5 seconds delay
+            }
+=======
           // Display chatbot response after a short delay
           setTimeout(() => {
             const botMessageElement = document.createElement("div");
@@ -430,6 +441,7 @@
             chatbotBody.appendChild(botMessageElement);
             chatbotBody.scrollTop = chatbotBody.scrollHeight;
           }, 10000); // 10 seconds delay
+>>>>>>> 89d291004e287a282677c651d203d0a32bdb249d
         }
       }
 
