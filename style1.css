@@ -1,13 +1,16 @@
 /* Navbar styles */
 
 .navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    background: transparent;
-    /* Make navbar transparent */
+    backdrop-filter: blur(5px);
+    /* Light blur effect */
+    background-color: rgba(0, 0, 0, 0.347);
+    /* Light semi-transparent background */
     z-index: 999;
-    /* Ensure navbar is always above the video */
-    transition: background 0.3s ease;
+    /* Ensure it stays above other content */
+    transition: backdrop-filter 0.3s ease;
+    /* Smooth transition for blur effect */
 }
 
 
@@ -36,6 +39,7 @@
     padding-top: 50px;
     width: 100%;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 
