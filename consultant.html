@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astrologer Services</title>
+  <title>Astrologer Consultant</title>
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -156,7 +156,7 @@
       <button class="btn-close btn-sm" id="closeChatbot"></button>
     </div>
     <div class="chatbot-body">
-      <div class="chatbot-message">Hello, how can I help you?</div>
+      <div class="chatbot-message">Hello, Please Enter Your Contact Details!!</div>
     </div>
     <div class="chatbot-footer">
       <input type="text" placeholder="Type your message here..." id="chatInput" />
@@ -428,13 +428,17 @@
       <div class="row text-center">
         <div class="col-md-4 grid-item">
           <h5>Contact</h5>
-          <p>Email: guruji@astrologer.com</p>
-          <p>Phone: +91 1234567890</p>
+          <a href="mailto:guruji@astrologer.com">
+            <p>Email: guruji@astrologer.com</p>
+          </a>
+          <a href="tel:+0000000000">
+            <p>Phone: +91 1234567890</p>
+          </a>
         </div>
         <div class="col-md-4 grid-item">
           <h5>Agreements</h5>
           <p><a href="privacy.html">Privacy Policy</a></p>
-          <p><a href="#">Terms of Service</a></p>
+          <p><a href="terms.html">Terms of Service</a></p>
         </div>
         <div class="col-md-4 grid-item">
           <h5>Follow Us</h5>
@@ -489,10 +493,10 @@
           const botMessageElement = document.createElement("div");
           botMessageElement.classList.add("chatbot-message", "bot");
           botMessageElement.textContent =
-            "Thank you for being part of astrologer.";
+            "Thank you for Providing Your Details, We Will Contact You";
           chatbotBody.appendChild(botMessageElement);
           chatbotBody.scrollTop = chatbotBody.scrollHeight;
-        }, 10000); // 10 seconds delay
+        }, 3000); // 10 seconds delay
       }
     }
 
